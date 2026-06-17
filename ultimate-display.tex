@@ -17,6 +17,9 @@
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\usepackage{array}
+% Definiert einen neuen Spaltentyp 'L', der die Breite als Argument nimmt
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \begin{document}
 
