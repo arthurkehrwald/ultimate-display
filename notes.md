@@ -6,3 +6,7 @@
   - Beams are coherent in phase and frequency
   - Reconstructs object beam by diffracting reference beam
 - Holography as display technology
+- Spatial bandwidth product
+- SLM technologies
+- Common compromises
+- Notable prototypes
