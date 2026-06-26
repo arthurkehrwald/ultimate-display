@@ -1,7 +1,4 @@
-\section{State of the art}
-Along the way towards that ideal, many displays have been developed (and some commercialized), that fulfill some of the requirements outlined in the previous section. For this discussion, they will be categorized into multiscopic, volumetric and holographic designs. This taxonomy mostly follows that proposed by Jason Geng in 2013 \cite{Geng_2013}. The exception is that eyeglasses based stereoscopic displays are not considered as a category of their own and instead discussed alongside multiview displays. Multiview displays approximate the target light field using discrete 2D views. Volumetric displays are a straightforward extension of 2D displays into the third dimension. Where 2D displays have a two-dimensional grid of pixels, volumetric displays have a three-dimensional grid of voxels. Holographic displays directly reconstruct a wavefront using interference patterns. Since there is no sampling via voxels or discrete views, this approach is theoretically ideal, but in practice, many compromises are necessary due to the immense data rate required to display holographic diffraction gratings \cite{Blanche_2021}.
-
-\subsection{Multiview displays}
+\section{Multiview displays}
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{assets/lenticular_sheet.png}
@@ -39,7 +36,7 @@ Even with the addition of motion parallax, multiscopic displays still lack the a
 
 In summary, stereoscopic and multiscopic displays are a practical and commercially viable improvement over conventional 2D displays, although all but a select few fall short of fulfilling the formal requirements for the ultimate display. They all offer binocular disparity and vergence cues. Some additionally provide motion parallax on one or two axes and a few lab prototypes support the accommodation cue as well, although such displays have proven too complex and expensive for commercialization so far \cite{Wen_Qiao_Fengbin_Zhou_Linsen_Chen_2020}.
 
-\subsection{Volumetric displays}
+\section{Volumetric displays}
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{assets/perspecta.png}
@@ -78,7 +75,7 @@ The alternative are static volume displays. Passive variants include various des
 
 Although volumetric displays only viewable from one side exist \cite{Sullivan_2002}, a capability unique to volumetric displays is the possibility for the view volume to be observed from all directions (except typically from below). Some volumetric displays even permit the user to enter the view volume \cite{saito2008laser}. Returning to the plenoptic function as a benchmark for 3D displays, this means that the domain of the approximation $\tilde{P}_v(x, y, z, \theta, \phi, \lambda, t)$ of the plenoptic function $P$ regarding some volumetric display $v$, is much larger in the directional dimensions $\theta$ and $\phi$ than the approximation $\tilde{P}_p$ of some planar (multiscopic or holographic) display $p$. While the $\theta, \phi$ domain of volumetric light field approximations is larger, the approximate values across that domain are less accurate, because volumetric displays are generally isotropic. Ideally, every voxel at a given $x, y, z$ location emits the same spectrum and brightness in all directions. Deviations from this are caused by technical reasons and cannot be controlled to display content. Conversely, holographic and multiview displays are directional emitters by design, which enables them to simulate view dependent effects such as reflections and specular highlights. The isotropic nature of volumetric displays also means that they are not capable of  Compared specifically to a multiview display $m$ with approximation $\tilde{P}_m$ within their respective $x, y, z$ domains, the accuracy of $\tilde{P}_m$ is proportional to the angular resolution (number of views) of $m$ \textit{and} its spatial resolution (pixel density) while the accuracy of $\tilde{P}_p$ depends \textit{only} on the spatial resolution (voxel density) of the volumetric display $v$. An equivalent, less formal explanation in terms of depth cues is that multiview displays provide discrete motion parallax through discrete views while volumetric displays inherently provide continuous motion parallax.
 
-\subsection{Holographic displays}
+\section{Holographic displays}
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{assets/seereal-hologram.png}
